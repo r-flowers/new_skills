@@ -1,0 +1,17 @@
+specific questions for right now:
+
+i think i understand what the code is doing in pseudocode but i think i need to go over how the proper syntax works again, for what i'm trying to do with this skill-search.
+
+how do i structure accessing the form data properly, and use that to search and display?
+
+long-term questions:
+
+how do i add full user profiles with emails/email authentication, passwords, logging in and out? (and different types of user privileges e.g. users, mods, admins)
+
+how can i allow users to create hubs and post comments on those hubs?
+
+how can i allow users to send private messages to each other?
+
+BUGS TO BE DEALT WITH:
+
+currently everything to do with searching in a case sensitive way is pretty fucked.

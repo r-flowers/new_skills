@@ -1,0 +1,174 @@
+/* defaults */
+
+h1 {
+    text-align: center;
+    padding: 10%;
+}
+
+p {
+    text-align: center;
+    padding: 10%;
+}
+
+.maintext {
+    text-align: justify;
+    padding: 10% 25%;
+    font-size: 16px;
+}
+
+a {
+    transition: 1s;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* form stuff */
+
+form {
+/*
+    margin: 10%;
+    margin-top: 0%;
+*/
+    text-align: center;
+}
+
+/* navbar */
+
+nav > ul {
+    background-color: #fff;
+}
+
+/* jumbotron */
+
+.jumbotron {
+    background-color: #fff;
+    text-align: center;
+    color: #494850;
+/*    background-image: url(/img/dreamfever.jpg);*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header > h1 {
+    padding: 10%;
+}
+
+/* user profile/contacts page */
+
+/*
+.userprofile {
+    margin: 5%;
+    padding: 10%;
+    background-color: #D8D8F6;
+    border: 2px solid #B18FCF;
+    border-radius: 5px;
+}
+
+.userbutton {
+    text-align: center;
+}
+
+.userprofile > p {
+    padding: 5%;
+}
+
+.userprofile > img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+*/
+
+/* search */
+
+/* profile display */
+
+#profile {
+    margin: 0 auto;
+    text-align: center; 
+}
+
+#profile_recommend {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.person {
+    width: 300px;
+    padding: 4px 20px 20px 20px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    background-color: #D8D8F6;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 400px;
+}
+
+.person .profileImage {
+    text-align: center;
+}
+
+.person img {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px #fff solid;
+}
+
+.person h5 {
+    margin: 10px 0px 0px 0px;
+}
+
+.person p {
+    margin: 0px;
+}
+
+/* parallax */
+
+#img1 { 
+    background-image: url(../img/cactus.jpg);
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img2 { 
+    background-image: url(../img/desert.jpg);
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3 { 
+    background-image: url(../img/rock.jpg);
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img4 { 
+    background-image: url(../img/trailer.jpg);
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img5 { 
+    background-image: url(../img/holga.jpg);
+    height: 640px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
