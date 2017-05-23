@@ -30,7 +30,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
                 <div class="form-group">
-                    <label for="searchbox">Search for a study partner by skill:</label>
+                    <label for="searchbox">Search for a study partner by skill (case sensitive):</label>
                     <input class="form-control" name="search" id="searchbox" rows="1">
                 </div>
             <a href="#" class="btn" id="submit">find</a>
@@ -46,9 +46,8 @@
         var check = false;
         
         $("#submit").click(function(){
-//            $('.nomatch').remove();
             var search = $("#searchbox").val();
-            var search = search.toUpperCase();
+            //var search = search.toUpperCase();
             check = false;
             $.ajax({
                 url: 'users.json',
@@ -59,7 +58,7 @@
                     console.log(data);
                 },
                 success: function(data) {
-                    //$('.nomatch').remove();
+                    $('.nomatch').remove();
                     $('.person').remove();
                     $.each(data, function(index, value) {
                         console.log(Object.keys(value));
@@ -78,11 +77,9 @@
                             $('#p' + id).append('<h3>' + id + '</h3>');
                             $('#p' + id).append('<div class="profileImage"><img src="img/' + id + '.jpg"></div>');
                             $('#p' + id).append('<h4>name: ' + name + '</h4><p>skill: ' + skill + '<br></p>');
-                            //$('.nomatch').remove();
                         }
                     });
                     if (check == false) {
-                        //$('.nomatch').remove();
                         $('#profile_recommend').append('<p class="nomatch">Sorry, no one else is studying that skill right now.</p>');
                     }
                 }
