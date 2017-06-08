@@ -1,5 +1,9 @@
 /* defaults */
 
+body {
+    background-color: #D8D8F6;
+}
+
 h1 {
     text-align: center;
     padding: 10%;
@@ -22,6 +26,7 @@ a {
 
 h2 {
     text-align: center;
+    padding: 5%;
 }
 
 /* form stuff */
@@ -37,7 +42,7 @@ form {
 /* navbar */
 
 nav > ul {
-    background-color: #fff;
+    background-color: #D8D8F6;
 }
 
 /* jumbotron */
@@ -46,7 +51,7 @@ nav > ul {
     background-color: #fff;
     text-align: center;
     color: #494850;
-/*    background-image: url(/img/dreamfever.jpg);*/
+    background-image: url(img/dreamfever.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,15 +102,17 @@ header > h1 {
 }
 
 .person {
-    width: 300px;
-    padding: 4px 20px 20px 20px;
+    color: #fff;
+    width: 224px;
     display: inline-block;
-    text-align: left;
+    text-align: center;
     vertical-align: top;
-    background-color: #D8D8F6;
+    background-color: #757780;
     border-radius: 5px;
     margin: 10px;
     min-height: 400px;
+    transition: 1s;
+    border: 2px #D8D8F6 solid;
 }
 
 .person .profileImage {
@@ -116,6 +123,7 @@ header > h1 {
     width: 200px;
     border-radius: 50%;
     border: 2px #fff solid;
+    transition: 1s;
 }
 
 .person h5 {
@@ -124,6 +132,12 @@ header > h1 {
 
 .person p {
     margin: 0px;
+}
+
+.person:hover {
+    background-color: #6CCFF6;
+    border: 2px #fff solid;
+    color: #000;
 }
 
 /* parallax */

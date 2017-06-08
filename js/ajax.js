@@ -20,11 +20,13 @@ $('document').ready(function () {
                     var id = value.id;
                     var name = value.name;
                     var skill = value.skill;
+                    var email = value.email;
+                    var password = value.password;
                     
                     $('#profile').append('<div class="person" id="p' + id + '"></div>');
                     $('#p' + id).append('<h3>' + id + '</h3>');
                     $('#p' + id).append('<div class="profileImage"><img src="img/' + id + '.jpg"></div>');
-                    $('#p' + id).append('<h4>name: ' + name + '</h4><p>skill: ' + skill + '<br></p>');
+                    $('#p' + id).append('<h4>name: ' + name + '</h4><p>skill: ' + skill + '</h4><p>email: ' + email + '<br></p>');
                 });
             }
         });

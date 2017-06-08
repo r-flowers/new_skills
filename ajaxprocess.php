@@ -1,7 +1,9 @@
-<?php
+<?php session_start();
 // store data from the form into variables
 $n = $_POST['name'];
 $s = $_POST['skill'];
+$e = $_POST['email'];
+$p = $_POST['pw'];
 
 // retrieve the json file and convert it into a php array
 $jr = file_get_contents('users.json');
@@ -32,7 +34,8 @@ $i = ++$i;
 $add = array(
     "id" => $i,
     "name" => $n,
-    "skill" => $s
+    "skill" => $s,
+    "email" => $e
 );
 // print_r ($add);
 
@@ -49,4 +52,16 @@ file_put_contents('users.json', $ju);
 $t = $_FILES['photo']['tmp_name'];
 $f = "img/$i.jpg";
 move_uploaded_file($t, $f);
+
+$connection = mysqli_connect("localhost", "fssb", "Webdevfun1!", "fssb");
+    $query = "INSERT INTO capture (name, email, pw) VALUES ('$n', '$e', '$p');";
+    mysqli_query($connection, $query);
+    
+//    if(!$connection) {
+//        echo "error! " . $query . "<br>" . $connection->error;
+//    }
+//    mysqli_close($connection); // closing connection
+//    
+    // end store to sql DB
+    // finally, once all the data is processed, send the user to the confirmation page.
 ?>

@@ -23,7 +23,7 @@
     <header>
         <?php 
         require_once "nav.php";
-        require_once "jumbotron.php";
+        require_once "jumbotron2.php";
         ?>
     </header>
     
@@ -49,13 +49,27 @@
                     <input type="file" name="photo" required><br>
                 </label>
             </div>
+            <div class="col-lg-4">
+                email:<br>
+                <label>
+                    <input type="email" name="email" required><br>
+                </label>
+            </div>
+            <div class="col-lg-4">
+                password:<br>
+                <label>
+                    <input type="password" name="pw" required><br>
+                </label>
+            </div>
+            <div class="col-lg-4">
+            </div>
             <br>
             <input class="btn" type="submit" name="submit" value="submit" id="submit">
         </form>
     </div>
 
     <div id="profile">
-        <h1>All Profiles</h1>
+        <h2>all profiles:</h2>
     </div>
 
     <footer>

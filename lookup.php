@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php session_start();
+if(!isset($_SESSION['uid'])){
+    header('location: login.php');
+}
+?>
 
 <!doctype html>
 <html>
@@ -20,7 +24,7 @@
     <header>
         <?php 
         require_once "nav.php";
-        require_once "jumbotron.php";
+        require_once "jumbotron2.php";
         ?>
     </header>
 
@@ -39,7 +43,7 @@
     </div>
 
     <div id="profile_recommend">
-        <h1>profiles you may be interested in:</h1>
+        <h2>profiles you may be interested in:</h2>
     </div>
 
     <script>

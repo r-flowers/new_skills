@@ -1,1 +1,1 @@
-<p>site by robin flowers, 2017.</p>
+<p>site by robin flowers, 2017. all photos by <a href="https://dreamfeverfeverdream.com">whitney evanson</a>.</p>
